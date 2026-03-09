@@ -36,16 +36,16 @@ Agents should use the `scripts/spotify-control` wrapper for all commands.
 
 ```sh
 # Toggle play/pause
-scripts/spotify-control playpause
+./scripts/spotify-control playpause
 
 # Get current track info
-scripts/spotify-control get-info
+./scripts/spotify-control get-info
 
 # Set volume to 80%
-scripts/spotify-control set-volume 80
+./scripts/spotify-control set-volume 80
 
 # Seek to 1 minute (60s)
-scripts/spotify-control set-position 60
+./scripts/spotify-control set-position 60
 ```
 
 ## Guardrails
