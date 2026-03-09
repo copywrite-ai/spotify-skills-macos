@@ -1,6 +1,9 @@
 ---
 name: spotify-control
 description: macOS Spotify control skill for OpenClaw. Supports playback, volume, position, and metadata retrieval via AppleScript.
+version: 1.0.1
+author: Antigravity
+platform: macOS
 ---
 
 # Spotify Control (macOS)
@@ -30,22 +33,22 @@ Control Spotify on macOS using AppleScript. This skill provides a set of command
 
 ## Usage
 
-Agents should use the `scripts/spotify-control` wrapper for all commands.
+Agents should use the `scripts/spotify-control.py` wrapper for all commands.
 
 ### Examples
 
 ```sh
 # Toggle play/pause
-./scripts/spotify-control playpause
+scripts/spotify-control.py playpause
 
 # Get current track info
-./scripts/spotify-control get-info
+scripts/spotify-control.py get-info
 
 # Set volume to 80%
-./scripts/spotify-control set-volume 80
+scripts/spotify-control.py set-volume 80
 
 # Seek to 1 minute (60s)
-./scripts/spotify-control set-position 60
+scripts/spotify-control.py set-position 60
 ```
 
 ## Guardrails
